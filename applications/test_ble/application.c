@@ -1,17 +1,13 @@
-/*
- * File      : application.c
- * This file is part of RT-Thread RTOS
- * COPYRIGHT (C) 2015, RT-Thread Development Team
- *
- * The license and distribution terms for this file may be
- * found in the file LICENSE in this distribution or at
- * http://www.rt-thread.org/license/LICENSE
- *
- * Change Logs:
- * Date           Author       Notes
- * 2015-03-01     Yangfs       the first version
- * 2015-03-27     Bernard      code cleanup.
- */
+/**
+  *********************************************************************************
+  *
+  * @file    applications.c
+  * @brief   Main start
+  * @author  yuzrain
+  * @note    The main() function is not valid here when using the GCC compiler
+  *
+  *********************************************************************************
+  */
 
 /**
  * @addtogroup NRF52832
