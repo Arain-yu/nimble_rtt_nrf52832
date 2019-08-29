@@ -2,7 +2,7 @@
 nRF52832 nimble BLE stack based on RT-THREAD
 
 ## Note
-just for test
+just for test!
 
 # NRF52832 Nimble BSP 使用说明
 
