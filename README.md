@@ -13,6 +13,7 @@ BLE stack will run when `ble_hr` is entered
 ```
 msh />ble_hr
 [I/nimble] GAP procedure initiated: stop advertising.
-[I/nimble] GAP procedure initiated: advertise; disc_mode=2 adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0
+[I/nimble] GAP procedure initiated: advertise; disc_mode=2 adv_channel_map=0 own_addr_type=0
+adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0
 msh />
 ```
