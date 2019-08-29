@@ -20,9 +20,17 @@
 
 #include <rtthread.h>
 
+#ifdef __GNUC__
+
+	/* We do nothing */
+
+#else
+
 int main(void)
 {
     rt_kprintf("hello world \r\n");
 }
+
+#endif
 
 /*@}*/

@@ -155,13 +155,14 @@ int __low_level_init(void)
     return 0;
 }
 #elif defined(__GNUC__)
-extern int main(void);
+
 /* Add -eentry to arm-none-eabi-gcc argument */
-int entry(void)
+int main(void)
 {
     rt_hw_interrupt_disable();
     rtthread_startup();
-    return 0;
+
+    while (1);
 }
 #endif
 
@@ -187,8 +188,10 @@ void main_thread_entry(void *parameter)
     /* invoke system main function */
 #if defined(__CC_ARM) || defined(__CLANG_ARM)
     $Super$$main(); /* for ARMCC. */
-#elif defined(__ICCARM__) || defined(__GNUC__)
+#elif defined(__ICCARM__)
     main();
+#elif defined(__GNUC__)
+    /* We do nothing */
 #endif
 }
 

@@ -22,8 +22,8 @@ extern int Image$$RW_IRAM1$$ZI$$Limit;
 #pragma section="HEAP"
 #define NRF_SRAM_BEGIN    (__segment_end("HEAP"))
 #else
-extern int __bss_end;
-#define NRF_SRAM_BEGIN    (&__bss_end)
+extern int __bss_end__;
+#define NRF_SRAM_BEGIN    (&__bss_end__)
 #endif
 
 #define OSTICK_CLOCK_HZ  ( 32768UL )
