@@ -173,6 +173,7 @@ static rt_uint8_t main_stack[RT_MAIN_THREAD_STACK_SIZE];
 struct rt_thread main_thread;
 #endif
 
+extern void _main(void);
 /* the system main thread */
 void main_thread_entry(void *parameter)
 {
@@ -192,6 +193,7 @@ void main_thread_entry(void *parameter)
     main();
 #elif defined(__GNUC__)
     /* We do nothing */
+    _main();
 #endif
 }
 
